@@ -80,42 +80,44 @@ INDEX `category_id` (`category_id`)
 -- ----------------------------
 -- Table structure for category_root_poetry
 -- ----------------------------
-DROP TABLE IF EXISTS `category_root_poetry`;
-CREATE TABLE `category_root_poetry` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `category_name` varchar(12) NOT NULL COMMENT '诗词根类目名',
-  `category_description` varchar(12) NULL COMMENT '根类目描述',
-`date_create` datetime NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `date_update` datetime NULL DEFAULT NULL COMMENT '更新时间',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
--- ----------------------------
--- Table structure for category_child_poetry
--- ----------------------------
-DROP TABLE IF EXISTS `category_child_poetry`;
-CREATE TABLE `category_child_poetry` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `parent_id` int NOT NULL COMMENT '诗词根类目id',
-  `category_name` varchar(12) NOT NULL COMMENT '诗词子类目名',
-  `category_description` varchar(12) NULL COMMENT '子类目描述',
-`date_create` datetime NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `date_update` datetime NULL DEFAULT NULL COMMENT '更新时间',
-  PRIMARY KEY (`id`) USING BTREE,
-  INDEX `parent_id` (`parent_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+-- DROP TABLE IF EXISTS `category_root_poetry`;
+-- CREATE TABLE `category_root_poetry` (
+--   `id` int NOT NULL AUTO_INCREMENT,
+--   `category_name` varchar(12) NOT NULL COMMENT '诗词根类目名',
+--   `category_description` varchar(12) NULL COMMENT '根类目描述',
+-- `date_create` datetime NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+--   `date_update` datetime NULL DEFAULT NULL COMMENT '更新时间',
+--   PRIMARY KEY (`id`) USING BTREE
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+-- -- ----------------------------
+-- -- Table structure for category_child_poetry
+-- -- ----------------------------
+-- DROP TABLE IF EXISTS `category_child_poetry`;
+-- CREATE TABLE `category_child_poetry` (
+--   `id` int NOT NULL AUTO_INCREMENT,
+--   `parent_id` int NOT NULL COMMENT '诗词根类目id',
+--   `category_name` varchar(12) NOT NULL COMMENT '诗词子类目名',
+--   `category_description` varchar(12) NULL COMMENT '子类目描述',
+-- `date_create` datetime NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+--   `date_update` datetime NULL DEFAULT NULL COMMENT '更新时间',
+--   PRIMARY KEY (`id`) USING BTREE,
+--   INDEX `parent_id` (`parent_id`)
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 -- ----------------------------
 -- Table structure for category_ poetry
 -- ----------------------------
 DROP TABLE IF EXISTS `category_poetry`;
 CREATE TABLE `category_poetry` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `poetry_id` int NOT NULL COMMENT '诗词id',
-  `category_child_id` int NOT NULL COMMENT '诗词子类目id',
-`date_create` datetime NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `date_update` datetime NULL DEFAULT NULL COMMENT '更新时间',
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `poetry_id` int(11) DEFAULT NULL COMMENT '诗词id',
+  `child_category_name` varchar(10) NOT NULL COMMENT '诗词子类目名',
+  `root_category_name` varchar(10) NOT NULL COMMENT '诗词父类目名',
+  `date_create` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `date_update` datetime DEFAULT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`) USING BTREE,
-  INDEX `poetry_id` (`poetry_id`),
-  INDEX `category_child_id` (`category_child_id`)
+  KEY `poetry_id` (`poetry_id`),
+  KEY `child_category_name` (`child_category_name`),
+  KEY `root_category_name` (`root_category_name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 -- ----------------------------
 -- Table structure for poetry_collection

@@ -10,8 +10,18 @@ package com.poetry.entity;
  */
 public class CategoryPoetry extends BaseEntity {
     private int id;
+    private String childCategoryName;
+    private String rootCategoryName;
     private int poetryId;
-    private int categoryChildId;
+    private String imageUrl;
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
 
     public int getId() {
         return id;
@@ -19,6 +29,22 @@ public class CategoryPoetry extends BaseEntity {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getChildCategoryName() {
+        return childCategoryName;
+    }
+
+    public void setChildCategoryName(String childCategoryName) {
+        this.childCategoryName = childCategoryName;
+    }
+
+    public String getRootCategoryName() {
+        return rootCategoryName;
+    }
+
+    public void setRootCategoryName(String rootCategoryName) {
+        this.rootCategoryName = rootCategoryName;
     }
 
     public int getPoetryId() {
@@ -29,20 +55,14 @@ public class CategoryPoetry extends BaseEntity {
         this.poetryId = poetryId;
     }
 
-    public int getCategoryChildId() {
-        return categoryChildId;
-    }
-
-    public void setCategoryChildId(int categoryChildId) {
-        this.categoryChildId = categoryChildId;
-    }
-
     @Override
     public String toString() {
         return "CategoryPoetry{" +
                 "id=" + id +
+                ", childCategoryName='" + childCategoryName + '\'' +
+                ", rootCategoryName='" + rootCategoryName + '\'' +
                 ", poetryId=" + poetryId +
-                ", categoryChildId=" + categoryChildId +
+                ", imageUrl='" + imageUrl + '\'' +
                 '}';
     }
 }

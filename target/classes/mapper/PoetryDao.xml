@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.poetry.dao.PoetryDao">
+    <insert id="insertPoetry" >
+        insert into poetry (poetry_name,dynasty,author,content,annotation,trans,image_url,date_create,date_update) values (#{poetryName},#{dynasty},#{author},#{content},#{annotation},#{trans},#{imageUrl},now(),now())
+    </insert>
+    <update id="updatePoetry">
+        update poetry set
+        <if test="poetryName != null">
+            poetry_name=#{poetryName},
+        </if>
+        <if test="dynasty != null">
+            dynasty=#{dynasty},
+        </if>
+        <if test="author != null">
+            author=#{author},
+        </if>
+        <if test="content != null ">
+            content=#{content},
+        </if>
+        <if test="annotation != null ">
+            annotation=#{annotation},
+        </if>
+        <if test="trans != null ">
+            trans=#{trans},
+        </if>
+        <if test="imageUrl != null ">
+            image_url=#{imageUrl},
+        </if>
+        date_update = now()
+        where id = #{id}
+    </update>
+    <delete id="deleteByPoetryId">
+        delete from poetry where id=#{id}
+    </delete>
+    <delete id="deleteByPoetryName">
+        delete from poetry where poetry_name=#{poetryName}
+    </delete>
+    <insert id="insertPoetryCategory">
+        insert into category_poetry (poetry_id,child_category_name,root_category_name,date_create,date_update) values (#{poetryId},#{childCategoryName},#{rootCategoryName},now(),now())
+    </insert>
+    <select id="getAllPoetry" resultType="Poetry">
+        select * from poetry
+    </select>
+    <select id="getByPoetryId" resultType="Poetry">
+        select * from poetry where poetry_id=#{poetryId}
+    </select>
+    <select id="getByPoetryName" resultType="Poetry">
+        select * from poetry where poetry_name=#{poetryName}
+    </select>
+    <select id="getByPoetryAuthor" resultType="Poetry">
+        select * from poetry where author=#{author}
+    </select>
+    <select id="getByDynasty" resultType="Poetry">
+        select * from poetry where dynasty=#{dynasty}
+    </select>
+    <select id="getPoetryByChildCategoryName" resultType="Poetry">
+        select p.id,p.poetry_name,p.dynasty,p.author,p.content,p.annotation,p.trans,p.image_url,p.date_create,p.date_update from category_poetry as c inner join poetry as p on c.poetry_id=p.id where c.child_category_name=#{childCategoryName}
+    </select>
+    <select id="getByRootCategoryName" resultType="CategoryPoetry">
+        select * from category_poetry as c where c.root_category_name=#{rootCategoryName}
+    </select>
+</mapper>

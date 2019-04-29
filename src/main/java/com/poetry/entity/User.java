@@ -70,4 +70,5 @@ public class User extends BaseEntity{
                 ", birthday=" + birthday +
                 '}';
     }
+
 }

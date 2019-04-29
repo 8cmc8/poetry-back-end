@@ -1,7 +1,7 @@
 package com.poetry.entity;
 
 /**
- * ClassName: Poetry <br/>
+ * ClassName: PoetryDao <br/>
  * Description: <br/>
  * date: 2019-04-25 22:04<br/>
  *
@@ -15,7 +15,7 @@ public class Poetry extends BaseEntity {
     private String author;
     private String content;
     private String annotation;
-    private String translation;
+    private String trans;
     private String imageUrl;
 
     public int getId() {
@@ -66,12 +66,12 @@ public class Poetry extends BaseEntity {
         this.annotation = annotation;
     }
 
-    public String getTranslation() {
-        return translation;
+    public String getTrans() {
+        return trans;
     }
 
-    public void setTranslation(String translation) {
-        this.translation = translation;
+    public void setTrans(String trans) {
+        this.trans = trans;
     }
 
     public String getImageUrl() {
@@ -84,14 +84,14 @@ public class Poetry extends BaseEntity {
 
     @Override
     public String toString() {
-        return "Poetry{" +
+        return "PoetryDao{" +
                 "id=" + id +
                 ", poetryName='" + poetryName + '\'' +
                 ", dynasty='" + dynasty + '\'' +
                 ", author='" + author + '\'' +
                 ", content='" + content + '\'' +
                 ", annotation='" + annotation + '\'' +
-                ", translation='" + translation + '\'' +
+                ", trans='" + trans + '\'' +
                 ", imageUrl='" + imageUrl + '\'' +
                 '}';
     }
