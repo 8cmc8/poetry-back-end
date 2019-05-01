@@ -81,4 +81,14 @@ public class Result<T> {
         this.code = code;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "Result{" +
+                "success=" + success +
+                ", data=" + data +
+                ", msg='" + msg + '\'' +
+                ", code='" + code + '\'' +
+                '}';
+    }
 }

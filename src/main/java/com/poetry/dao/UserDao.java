@@ -13,11 +13,19 @@ import java.util.List;
  * @since JDK 1.8
  */
 public interface UserDao {
+
     int insertUser(User user);
+
     int updateUser(User user);
+
     int deleteByUserId(int id);
+
     int deleteByUserName(String userName);
+
     User getByUserId(int id);
+
     User getByUserName(String userName);
+
     List<User> getAllUser();
+
 }
