@@ -1,18 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="poetry-back-end:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d4f3bae-b564-43b8-8506-7c7767874d32" name="Default Changelist" comment="">
+    <list default="true" id="5d4f3bae-b564-43b8-8506-7c7767874d32" name="Default Changelist" comment="poetry用户模块">
+      <change afterPath="$PROJECT_DIR$/target/classes/com/poetry/controller/CategoryController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/poetry/service/CategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/poetry/service/Impl/CategoryServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poetry/common/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/controller/PoetryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/dao/PoetryDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poetry/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/entity/CategoryPoetry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poetry/entity/CategoryPoetry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/PoetryServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/service/PoetryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poetry/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poetry/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/controller/PoetryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poetry/controller/PoetryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poetry/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poetry/dao/CategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/dao/PoetryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poetry/dao/PoetryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poetry/entity/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/entity/CourseSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poetry/entity/CourseSection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/entity/vo/PoetrySimpleVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poetry/entity/vo/PoetrySimpleVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poetry/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/PoetryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/PoetryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/poetry/service/PoetryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/poetry/service/PoetryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/recources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/recources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/recources/mapper/CategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/recources/mapper/CategoryDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/recources/mapper/PoetryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/recources/mapper/PoetryDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/poetry/dao/PoetryDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/recources/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/recources/spring/spring-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/recources/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/recources/spring/spring-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/poetry/dao/CategoryDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/poetry/dao/CategoryDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/poetry/dao/PoetryDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/poetry/dao/PoetryDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poetry/controller/PoetryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poetry/controller/PoetryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poetry/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poetry/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poetry/dao/CategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poetry/dao/CategoryDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poetry/dao/PoetryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poetry/dao/PoetryDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poetry/entity/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poetry/entity/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poetry/entity/CourseSection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poetry/entity/CourseSection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poetry/entity/vo/PoetrySimpleVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poetry/entity/vo/PoetrySimpleVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poetry/service/Impl/PoetryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poetry/service/Impl/PoetryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/poetry/service/PoetryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/poetry/service/PoetryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CategoryDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/PoetryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/PoetryDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/poetry/dao/CategoryDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/poetry/dao/CategoryDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/poetry/dao/PoetryDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/poetry/dao/PoetryDaoTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,10 +67,120 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/PoetryService.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/controller/PoetryController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="141">
-                  <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+                <state relative-caret-position="152">
+                  <caret line="39" column="68" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="68" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/Course.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+                  <folding>
+                    <element signature="e#480#481#0" expanded="true" />
+                    <element signature="e#507#508#0" expanded="true" />
+                    <element signature="e#544#545#0" expanded="true" />
+                    <element signature="e#576#577#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/vo/CourseSimpleVO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="171">
+                  <caret line="17" selection-start-line="17" selection-end-line="17" />
+                  <folding>
+                    <element signature="e#397#398#0" expanded="true" />
+                    <element signature="e#428#429#0" expanded="true" />
+                    <element signature="e#476#477#0" expanded="true" />
+                    <element signature="e#516#517#0" expanded="true" />
+                    <element signature="e#553#554#0" expanded="true" />
+                    <element signature="e#586#587#0" expanded="true" />
+                    <element signature="e#638#639#0" expanded="true" />
+                    <element signature="e#682#683#0" expanded="true" />
+                    <element signature="e#710#711#0" expanded="true" />
+                    <element signature="e#737#738#0" expanded="true" />
+                    <element signature="e#774#775#0" expanded="true" />
+                    <element signature="e#806#807#0" expanded="true" />
+                    <element signature="e#841#842#0" expanded="true" />
+                    <element signature="e#875#876#0" expanded="true" />
+                    <element signature="e#926#927#0" expanded="true" />
+                    <element signature="e#972#973#0" expanded="true" />
+                    <element signature="e#1005#1006#0" expanded="true" />
+                    <element signature="e#1037#1038#0" expanded="true" />
+                    <element signature="e#1084#1085#0" expanded="true" />
+                    <element signature="e#1126#1127#0" expanded="true" />
+                    <element signature="e#1157#1158#0" expanded="true" />
+                    <element signature="e#1187#1188#0" expanded="true" />
+                    <element signature="e#1230#1231#0" expanded="true" />
+                    <element signature="e#1268#1269#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/vo/PoetryChildCategoryVO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="74">
+                  <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+                  <folding>
+                    <element signature="e#295#296#0" expanded="true" />
+                    <element signature="e#335#336#0" expanded="true" />
+                    <element signature="e#401#402#0" expanded="true" />
+                    <element signature="e#459#460#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/CourseSection.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="212">
+                  <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+                  <folding>
+                    <element signature="e#458#459#0" expanded="true" />
+                    <element signature="e#493#494#0" expanded="true" />
+                    <element signature="e#549#550#0" expanded="true" />
+                    <element signature="e#597#598#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/recources/mapper/CourseDao.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="28" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/recources/mapper/CategoryDao.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/poetry/dao/PoetryDaoTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="106">
+                  <caret line="63" column="106" selection-start-line="63" selection-start-column="74" selection-end-line="63" selection-end-column="106" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -47,122 +191,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/PoetryServiceImpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="781">
-                  <caret line="70" column="77" selection-start-line="70" selection-start-column="77" selection-end-line="70" selection-end-column="77" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#439#440#0" expanded="true" />
-                    <element signature="e#467#468#0" expanded="true" />
-                    <element signature="e#531#532#0" expanded="true" />
-                    <element signature="e#559#560#0" expanded="true" />
-                    <element signature="e#633#634#0" expanded="true" />
-                    <element signature="e#661#662#0" expanded="true" />
-                    <element signature="e#728#729#0" expanded="true" />
-                    <element signature="e#756#757#0" expanded="true" />
-                    <element signature="e#819#820#0" expanded="true" />
-                    <element signature="e#846#847#0" expanded="true" />
-                    <element signature="e#916#917#0" expanded="true" />
-                    <element signature="e#943#944#0" expanded="true" />
-                    <element signature="e#1019#1020#0" expanded="true" />
-                    <element signature="e#1046#1047#0" expanded="true" />
-                    <element signature="e#1120#1121#0" expanded="true" />
-                    <element signature="e#1147#1148#0" expanded="true" />
-                    <element signature="e#1203#1204#0" expanded="true" />
-                    <element signature="e#1230#1231#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/controller/PoetryController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="61">
-                  <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/recources/mapper/CategoryDao.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="80" lean-forward="true" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/CategoryService.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="112">
-                  <caret line="15" column="83" lean-forward="true" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/CategoryServiceImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="50">
-                  <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="30" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/controller/CategoryController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="110">
-                  <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/poetry/dao/PoetryDaoTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="178">
-                  <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/UserService.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="177">
-                  <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/controller/UserController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="194">
-                  <caret line="48" column="48" lean-forward="true" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="148">
+                  <caret line="76" column="66" selection-start-line="76" selection-start-column="66" selection-end-line="76" selection-end-column="66" />
                 </state>
               </provider>
             </entry>
@@ -170,81 +200,87 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/common/Result.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="131">
-                  <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#470#471#0" expanded="true" />
-                    <element signature="e#517#518#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/Poetry.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="92">
-                  <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/BaseEntity.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/recources/mapper/PoetryDao.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/dao/UserDao.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="78">
-                  <caret line="15" selection-start-line="15" selection-end-line="15" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
+        <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/dao/CategoryDao.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/dao/CommunityDao.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="15" column="4" selection-start-line="15" selection-end-line="16" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="135">
+                  <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/dao/PoetryDao.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/controller/CommunityController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="35" column="86" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="35" selection-end-column="86" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="120">
+                  <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
                 </state>
               </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/dao/GameDao.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/controller/GameController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/GameService.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/CommunityService.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/GameServiceImpl.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/CommunityServiceImpl.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/recources/mapper/GameDao.xml">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/recources/mapper/CommunityDao.xml">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
         </leaf>
@@ -264,6 +300,7 @@
     <findStrings>
       <find>UserTest</find>
       <find>c3p</find>
+      <find>classpath</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -272,27 +309,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/PoetryCollection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/PoetryComment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/CategoryCourse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/CourseSection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/CourseCollection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/CourseComment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/TopicComment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/Category.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/CategoryGame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/GameJoin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/CourseOrder.java" />
         <option value="$PROJECT_DIR$/src/main/recources/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/recources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/User.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/recources/logback.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/recources/spring/spring-dao.xml" />
-        <option value="$PROJECT_DIR$/src/main/recources/spring/spring-service.xml" />
-        <option value="$PROJECT_DIR$/src/main/recources/spring/spring-web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/poetry/dao/Poetry.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/poetry/dao/PoetryChildCategory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/poetry/dao/PoetryRootCategory.java" />
@@ -307,24 +327,48 @@
         <option value="$PROJECT_DIR$/src/main/java/com/poetry/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/CategoryPoetry.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/poetry/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/dao/CategoryDao.java" />
-        <option value="$PROJECT_DIR$/src/main/recources/mapper/CategoryDao.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/poetry/dao/CategoryDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/RootCategory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/vo/PoetrySimpleVO.java" />
-        <option value="$PROJECT_DIR$/src/main/recources/mapper/PoetryDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/dao/PoetryDao.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/poetry/dao/PoetryDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/service/PoetryService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/PoetryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/poetry/common/Result.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/poetry/controller/PoetryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/CategoryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/dao/CategoryDao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/poetry/dao/CategoryDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/recources/spring/spring-service.xml" />
+        <option value="$PROJECT_DIR$/src/main/recources/spring/spring-dao.xml" />
+        <option value="$PROJECT_DIR$/src/main/recources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/recources/spring/spring-web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/vo/PoetrySimpleVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/poetry/service/CategoryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/CategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/poetry/controller/CategoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/vo/PoetryChildCategoryVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/dao/PoetryDao.java" />
+        <option value="$PROJECT_DIR$/src/main/recources/mapper/PoetryDao.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/poetry/dao/PoetryDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/service/PoetryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/PoetryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/controller/PoetryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/CourseSection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/Course.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/vo/CourseSimpleVO.java" />
+        <option value="$PROJECT_DIR$/src/main/recources/mapper/CourseDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/dao/CourseDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/service/CourseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/CourseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/controller/CourseController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/poetry/dao/CourseDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/entity/RootCategory.java" />
+        <option value="$PROJECT_DIR$/src/main/recources/mapper/CategoryDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/poetry/dao/CommunityDao.java" />
       </list>
     </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -370,7 +414,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -403,15 +446,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="poetry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poetry-back-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poetry-back-end" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="poetry" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="poetry-back-end" type="b2602c69:ProjectViewProjectNode" />
@@ -489,8 +523,7 @@
               <item name="poetry-back-end" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="recources" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="poetry-back-end" type="b2602c69:ProjectViewProjectNode" />
@@ -498,6 +531,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="poetry-back-end" type="b2602c69:ProjectViewProjectNode" />
@@ -520,15 +554,12 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="poetry-back-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -567,21 +598,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PoetryController">
-    <configuration name="PoetryController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.poetry.controller.PoetryController" />
-      <module name="poetry-back-end" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.poetry.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CategoryDaoTest.getChildCategoryByRootCategoryName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CategoryDaoTest.getAllRootCategory">
+    <configuration name="CategoryDaoTest.getAllRootCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poetry-back-end" />
       <extension name="coverage">
         <pattern>
@@ -591,13 +609,61 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.poetry.dao" />
       <option name="MAIN_CLASS_NAME" value="com.poetry.dao.CategoryDaoTest" />
-      <option name="METHOD_NAME" value="getChildCategoryByRootCategoryName" />
+      <option name="METHOD_NAME" value="getAllRootCategory" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PoetryDaoTest.getByPoetryId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CourseDaoTest.getCourseAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poetry-back-end" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.poetry.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.poetry.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.poetry.dao.CourseDaoTest" />
+      <option name="METHOD_NAME" value="getCourseAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseDaoTest.getCourseByCourseName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poetry-back-end" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.poetry.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.poetry.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.poetry.dao.CourseDaoTest" />
+      <option name="METHOD_NAME" value="getCourseByCourseName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseDaoTest.getCourseSectionByCourseId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poetry-back-end" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.poetry.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.poetry.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.poetry.dao.CourseDaoTest" />
+      <option name="METHOD_NAME" value="getCourseSectionByCourseId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PoetryDaoTest.getPoetryChildCategoryByPoetryId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="poetry-back-end" />
       <extension name="coverage">
         <pattern>
@@ -607,51 +673,101 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.poetry.dao" />
       <option name="MAIN_CLASS_NAME" value="com.poetry.dao.PoetryDaoTest" />
-      <option name="METHOD_NAME" value="getByPoetryId" />
+      <option name="METHOD_NAME" value="getPoetryChildCategoryByPoetryId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PoetryDaoTest.getPoetrySimpleByChildCategoryName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poetry-back-end" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.poetry.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.poetry.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.poetry.dao.PoetryDaoTest" />
-      <option name="METHOD_NAME" value="getPoetrySimpleByChildCategoryName" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="Tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+      <deployment>
+        <artifact name="poetry-back-end:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_poetry-back-end" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51387" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="poetry-back-end:war exploded" />
+        </option>
       </method>
     </configuration>
-    <configuration name="PoetryDaoTest.insertPoetry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="poetry-back-end" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.poetry.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.poetry.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.poetry.dao.PoetryDaoTest" />
-      <option name="METHOD_NAME" value="insertPoetry" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="JUnit.CategoryDaoTest.getAllRootCategory" />
+      <item itemvalue="Tomcat Server.Tomcat 9" />
+      <item itemvalue="JUnit.PoetryDaoTest.getPoetryChildCategoryByPoetryId" />
+      <item itemvalue="JUnit.CourseDaoTest.getCourseByCourseName" />
+      <item itemvalue="JUnit.CourseDaoTest.getCourseSectionByCourseId" />
+      <item itemvalue="JUnit.CourseDaoTest.getCourseAll" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PoetryController" />
-        <item itemvalue="JUnit.PoetryDaoTest.getByPoetryId" />
-        <item itemvalue="JUnit.PoetryDaoTest.getPoetrySimpleByChildCategoryName" />
-        <item itemvalue="JUnit.CategoryDaoTest.getChildCategoryByRootCategoryName" />
-        <item itemvalue="JUnit.PoetryDaoTest.insertPoetry" />
+        <item itemvalue="JUnit.CategoryDaoTest.getAllRootCategory" />
+        <item itemvalue="JUnit.CourseDaoTest.getCourseAll" />
+        <item itemvalue="JUnit.CourseDaoTest.getCourseSectionByCourseId" />
+        <item itemvalue="JUnit.CourseDaoTest.getCourseByCourseName" />
+        <item itemvalue="JUnit.PoetryDaoTest.getPoetryChildCategoryByPoetryId" />
       </list>
     </recent_temporary>
   </component>
@@ -680,7 +796,8 @@
       <workItem from="1556458902590" duration="22834000" />
       <workItem from="1556516906231" duration="112000" />
       <workItem from="1556550694274" duration="14000" />
-      <workItem from="1556673114268" duration="11639000" />
+      <workItem from="1556673114268" duration="28978000" />
+      <workItem from="1556863085680" duration="20824000" />
     </task>
     <task id="LOCAL-00001" summary="entity、dao部分&#10;mybatis、spring配置文件">
       <created>1556216026163</created>
@@ -696,48 +813,72 @@
       <option name="project" value="LOCAL" />
       <updated>1556516839428</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="poetry用户模块">
+      <created>1556687101165</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556687101165</updated>
+    </task>
+    <task id="LOCAL-00004" summary="poetry用户模块">
+      <created>1556687272876</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556687272876</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PoetryDaoTest_getPoetrySimpleByChildCategoryName - 2019.05.01 at 12h 12m 03s.xml">
-      <configuration name="PoetryDaoTest.getPoetrySimpleByChildCategoryName" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_getAllRootCategory - 2019.05.03 at 22h 43m 31s.xml">
+      <configuration name="CategoryDaoTest.getAllRootCategory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PoetryDaoTest_getPoetrySimpleByChildCategoryName - 2019.05.01 at 12h 12m 49s.xml">
-      <configuration name="PoetryDaoTest.getPoetrySimpleByChildCategoryName" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_getAllRootCategory - 2019.05.03 at 22h 44m 18s.xml">
+      <configuration name="CategoryDaoTest.getAllRootCategory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PoetryDaoTest_getPoetrySimpleByChildCategoryName - 2019.05.01 at 12h 14m 19s.xml">
-      <configuration name="PoetryDaoTest.getPoetrySimpleByChildCategoryName" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_getAllRootCategory - 2019.05.03 at 22h 45m 20s.xml">
+      <configuration name="CategoryDaoTest.getAllRootCategory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PoetryDaoTest_getPoetrySimpleByChildCategoryName - 2019.05.01 at 12h 14m 45s.xml">
-      <configuration name="PoetryDaoTest.getPoetrySimpleByChildCategoryName" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_getAllRootCategory - 2019.05.03 at 22h 46m 56s.xml">
+      <configuration name="CategoryDaoTest.getAllRootCategory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PoetryDaoTest_getPoetrySimpleByChildCategoryName - 2019.05.01 at 12h 15m 37s.xml">
-      <configuration name="PoetryDaoTest.getPoetrySimpleByChildCategoryName" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_getAllRootCategory - 2019.05.03 at 22h 47m 36s.xml">
+      <configuration name="CategoryDaoTest.getAllRootCategory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PoetryDaoTest_getByPoetryId - 2019.05.01 at 12h 17m 36s.xml">
-      <configuration name="PoetryDaoTest.getByPoetryId" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_getAllRootCategory - 2019.05.03 at 22h 48m 16s.xml">
+      <configuration name="CategoryDaoTest.getAllRootCategory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PoetryDaoTest_getByPoetryId - 2019.05.01 at 12h 18m 53s.xml">
-      <configuration name="PoetryDaoTest.getByPoetryId" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_getAllRootCategory - 2019.05.03 at 22h 48m 44s.xml">
+      <configuration name="CategoryDaoTest.getAllRootCategory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PoetryDaoTest_getByPoetryId - 2019.05.01 at 12h 19m 29s.xml">
-      <configuration name="PoetryDaoTest.getByPoetryId" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_getAllRootCategory - 2019.05.03 at 22h 49m 05s.xml">
+      <configuration name="CategoryDaoTest.getAllRootCategory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PoetryDaoTest_getByPoetryId - 2019.05.01 at 12h 20m 08s.xml">
-      <configuration name="PoetryDaoTest.getByPoetryId" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_getAllRootCategory - 2019.05.03 at 22h 49m 26s.xml">
+      <configuration name="CategoryDaoTest.getAllRootCategory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PoetryDaoTest_getByPoetryId - 2019.05.01 at 12h 20m 27s.xml">
-      <configuration name="PoetryDaoTest.getByPoetryId" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_getAllRootCategory - 2019.05.03 at 22h 50m 18s.xml">
+      <configuration name="CategoryDaoTest.getAllRootCategory" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67752000" />
+    <option name="totallyTimeSpent" value="105915000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30758226" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3111588" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -747,19 +888,20 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32961586" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32961586" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39900866" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.34200743" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39900866" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32961586" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32961586" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007153" side_tool="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32961586" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32961586" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.33952913" />
-      <window_info anchor="bottom" id="Spring" order="14" />
+      <window_info anchor="bottom" id="Spring" order="14" weight="0.32961586" />
+      <window_info anchor="bottom" id="Application Servers" order="15" weight="0.32961586" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -777,346 +919,94 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="entity、dao部分&#10;mybatis、spring配置文件" />
     <MESSAGE value="go on" />
-    <option name="LAST_COMMIT_MESSAGE" value="go on" />
+    <MESSAGE value="poetry用户模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="poetry用户模块" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/recources/spring/spring-service.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.5.RELEASE/spring-beans-5.1.5.RELEASE.jar!/org/springframework/beans/factory/annotation/InitDestroyAnnotationBeanPostProcessor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        <state relative-caret-position="242">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/recources/logback.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.jar!/org/springframework/context/annotation/CommonAnnotationBeanPostProcessor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="153">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.5.RELEASE/spring-beans-5.1.5.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+        <state relative-caret-position="227">
+          <caret line="714" selection-start-line="714" selection-end-line="714" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/recources/spring/spring-web.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.5.RELEASE/spring-beans-5.1.5.RELEASE.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+        <state relative-caret-position="137">
+          <caret line="647" selection-start-line="647" selection-end-line="647" />
+          <folding>
+            <element signature="e#29273#29274#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/recources/mybatis-config.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.5.RELEASE/spring-beans-5.1.5.RELEASE.jar!/org/springframework/beans/support/ResourceEditorRegistrar.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        <state relative-caret-position="478">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/dao/PoetryChildCategory.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/dao/PoetryRootCategory.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/CategoryChildPoetry.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/sql/schema.sql">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.5.RELEASE/spring-beans-5.1.5.RELEASE.jar!/org/springframework/beans/AbstractNestablePropertyAccessor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="82" selection-start-line="82" selection-start-column="3" selection-end-line="104" selection-end-column="40" />
+        <state relative-caret-position="191">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+          <folding>
+            <element signature="e#4573#4574#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.5.RELEASE/spring-core-5.1.5.RELEASE.jar!/org/springframework/util/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.5.RELEASE/spring-beans-5.1.5.RELEASE.jar!/org/springframework/beans/PropertyEditorRegistrySupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+          <folding>
+            <element signature="e#3937#3938#0" expanded="true" />
+            <element signature="e#3989#3990#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/recources/spring/spring-dao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-173">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        <state relative-caret-position="300">
+          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/recources/mapper/UserDao.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/recources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar!/ch/qos/logback/classic/LoggerContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="266" selection-start-line="266" selection-end-line="266" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.5.RELEASE/spring-test-5.1.5.RELEASE.jar!/org/springframework/test/context/support/DefaultTestContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar!/ch/qos/logback/classic/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="618" selection-start-line="618" selection-end-line="618" />
-          <folding>
-            <element signature="e#21272#21273#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jcl/5.1.5.RELEASE/spring-jcl-5.1.5.RELEASE.jar!/org/apache/commons/logging/LogAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="365" selection-start-line="365" selection-end-line="365" />
-          <folding>
-            <element signature="e#12965#12966#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.5.RELEASE/spring-test-5.1.5.RELEASE.jar!/org/springframework/test/context/TestContextManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="253" selection-start-line="253" selection-end-line="253" />
-          <folding>
-            <element signature="e#1654#1655#0" expanded="true" />
-            <element signature="e#1718#1719#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.5.RELEASE/spring-test-5.1.5.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.5.RELEASE/spring-test-5.1.5.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestClassCallbacks.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.5.RELEASE/spring-test-5.1.5.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestClassCallbacks.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="370" selection-start-line="370" selection-end-line="370" />
-          <folding>
-            <element signature="e#2922#2923#0" expanded="true" />
-            <element signature="e#2966#2967#0" expanded="true" />
-            <element signature="e#10310#10449#0" expanded="true" />
-            <element signature="e#10448#10449#0" expanded="true" />
-            <element signature="e#11040#11204#0" expanded="true" />
-            <element signature="e#11203#11204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.5.RELEASE/spring-test-5.1.5.RELEASE.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runner/JUnitCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.5.RELEASE/spring-test-5.1.5.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestExecutionCallbacks.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/PoetryWithCategory.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/BaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/vo/RootCategoryVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/vo/ChildCategoryVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/CategoryPoetry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-          <folding>
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/RootCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-          <folding>
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#828#829#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/Poetry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/vo/PoetrySimpleVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/poetry/dao/UserDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret line="26" column="70" lean-forward="true" selection-start-line="25" selection-end-line="26" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/poetry/dao/CategoryDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/recources/mapper/PoetryDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/poetry/dao/PoetryDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/dao/PoetryDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="35" column="86" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="35" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="90" selection-start-line="1" selection-start-column="90" selection-end-line="1" selection-end-column="90" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/common/Result.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
+        <state relative-caret-position="-291">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#470#471#0" expanded="true" />
             <element signature="e#517#518#0" expanded="true" />
@@ -1124,72 +1014,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/PoetryService.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-2345" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/recources/spring/spring-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/CategoryService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="390">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding>
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/dao/CategoryDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="15" column="4" selection-start-line="15" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/PoetryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="781">
-          <caret line="70" column="77" selection-start-line="70" selection-start-column="77" selection-end-line="70" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#846#847#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1147#1148#0" expanded="true" />
-            <element signature="e#1203#1204#0" expanded="true" />
-            <element signature="e#1230#1231#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/recources/mapper/CategoryDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="80" lean-forward="true" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/CategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="15" column="83" lean-forward="true" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
+        <state relative-caret-position="240">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1198,41 +1049,353 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/CategoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="30" />
+        <state relative-caret-position="435">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/vo/PoetrySimpleVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#965#966#0" expanded="true" />
+            <element signature="e#1011#1012#0" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/CategoryPoetry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="48" column="48" lean-forward="true" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+        <state relative-caret-position="456">
+          <caret line="47" column="55" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/controller/CategoryController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/dao/PoetryDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        <state relative-caret-position="251">
+          <caret line="38" column="79" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/PoetryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="37" column="79" selection-start-line="37" selection-start-column="79" selection-end-line="37" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/PoetryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="76" column="66" selection-start-line="76" selection-start-column="66" selection-end-line="76" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <folding>
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/vo/PoetryChildCategoryVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/controller/PoetryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+        <state relative-caret-position="152">
+          <caret line="39" column="68" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/CourseSection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+          <folding>
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/vo/CourseSimpleVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1084#1085#0" expanded="true" />
+            <element signature="e#1126#1127#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1268#1269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/recources/mapper/PoetryDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/controller/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="28" column="68" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/dao/CourseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/CourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/controller/CourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/poetry/dao/PoetryDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="63" column="106" selection-start-line="63" selection-start-column="74" selection-end-line="63" selection-end-column="106" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/poetry/dao/CourseDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/recources/mapper/CourseDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/entity/RootCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/recources/mapper/CategoryDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/poetry/dao/CategoryDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/CourseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/controller/CommunityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/dao/GameDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/GameService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/CommunityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/GameServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/service/Impl/CommunityServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/recources/mapper/GameDao.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/recources/mapper/CommunityDao.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/controller/GameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/poetry/dao/CommunityDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>

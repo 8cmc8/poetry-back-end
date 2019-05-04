@@ -17,6 +17,15 @@ public class Course extends BaseEntity {
     private String imageUrl;
     private int totalTime;
     private double coursePrice;
+    private int free;   //1为免费，0为付费
+
+    public int getFree() {
+        return free;
+    }
+
+    public void setFree(int free) {
+        this.free = free;
+    }
 
     public int getId() {
         return id;
@@ -93,6 +102,7 @@ public class Course extends BaseEntity {
                 ", imageUrl='" + imageUrl + '\'' +
                 ", totalTime=" + totalTime +
                 ", coursePrice=" + coursePrice +
+                ", free=" + free +
                 '}';
     }
 }

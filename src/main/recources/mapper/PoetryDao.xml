@@ -56,10 +56,7 @@
     <select id="getByDynasty" resultType="Poetry">
         select * from poetry where dynasty=#{dynasty}
     </select>
-<!--    <select id="getPoetryByChildCategoryName" resultType="Poetry">-->
-<!--        select p.id,p.poetry_name,p.dynasty,p.author,p.content,p.annotation,p.trans,p.image_url,p.date_create,p.date_update from category_poetry as c inner join poetry as p on c.poetry_id=p.id where c.child_category_name=#{childCategoryName}-->
-<!--    </select>-->
-<!--    <select id="getByRootCategoryName" resultType="CategoryPoetry">-->
-<!--        select * from category_poetry as c where c.root_category_name=#{rootCategoryName}-->
-<!--    </select>-->
+    <select id="getPoetryChildCategoryByPoetryId" resultType="PoetryChildCategoryVO">
+        select distinct child_category_name from category_poetry where poetry_id=#{poetryId}
+    </select>
 </mapper>

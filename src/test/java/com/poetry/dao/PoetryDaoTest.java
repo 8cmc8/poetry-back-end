@@ -1,6 +1,7 @@
 package com.poetry.dao;
 
 import com.poetry.entity.Poetry;
+import com.poetry.entity.vo.PoetryChildCategoryVO;
 import com.poetry.entity.vo.PoetrySimpleVO;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -52,5 +53,15 @@ public class PoetryDaoTest {
     public void getByPoetryId() {
         Poetry poetry = poetryDao.getByPoetryId(5);
         System.out.print(poetry);
+    }
+    @Test
+    public void getAll() {
+        List<Poetry> poetries = poetryDao.getAllPoetry();
+        System.out.println(poetries);
+    }
+    @Test
+    public void getPoetryChildCategoryByPoetryId() {
+        List<PoetryChildCategoryVO> poetryChildCategoryVOList = poetryDao.getPoetryChildCategoryByPoetryId(4);
+        System.out.println(poetryChildCategoryVOList);
     }
 }

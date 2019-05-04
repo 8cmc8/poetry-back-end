@@ -14,4 +14,5 @@ import java.util.List;
  */
 public interface CategoryDao {
     List<RootCategory> getChildCategoryByRootCategoryName(String rootCategoryName);
+    List<RootCategory> getAllRootCategory();
 }

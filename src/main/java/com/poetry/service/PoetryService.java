@@ -1,6 +1,7 @@
 package com.poetry.service;
 
 import com.poetry.entity.Poetry;
+import com.poetry.entity.vo.PoetryChildCategoryVO;
 import com.poetry.entity.vo.PoetrySimpleVO;
 
 import java.util.List;
@@ -33,4 +34,6 @@ public interface PoetryService {
     List<Poetry> getAllPoetry();
 
     List<PoetrySimpleVO> getPoetrySimpleByChildCategoryName(String childCategoryName);
+
+    List<PoetryChildCategoryVO> getPoetryChildCategoryByPoetryId(int poetryId);
 }

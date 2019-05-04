@@ -6,4 +6,7 @@
     <select id="getChildCategoryByRootCategoryName" resultType="RootCategory">
         select * from root_category where root_category_name=#{rootCategoryName}
     </select>
+    <select id="getAllRootCategory" resultType="RootCategory">
+        select distinct root_category_name from root_category
+    </select>
 </mapper>

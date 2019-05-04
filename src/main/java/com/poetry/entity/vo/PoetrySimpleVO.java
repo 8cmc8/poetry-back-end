@@ -15,6 +15,46 @@ public class PoetrySimpleVO {
     private String author;
     private String content;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getPoetryName() {
+        return poetryName;
+    }
+
+    public void setPoetryName(String poetryName) {
+        this.poetryName = poetryName;
+    }
+
+    public String getDynasty() {
+        return dynasty;
+    }
+
+    public void setDynasty(String dynasty) {
+        this.dynasty = dynasty;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
     @Override
     public String toString() {
         return "PoetrySimpleVO{" +

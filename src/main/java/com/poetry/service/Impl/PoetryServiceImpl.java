@@ -2,6 +2,7 @@ package com.poetry.service.Impl;
 
 import com.poetry.dao.PoetryDao;
 import com.poetry.entity.Poetry;
+import com.poetry.entity.vo.PoetryChildCategoryVO;
 import com.poetry.entity.vo.PoetrySimpleVO;
 import com.poetry.service.PoetryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,5 +70,10 @@ public class PoetryServiceImpl implements PoetryService {
     @Override
     public List<PoetrySimpleVO> getPoetrySimpleByChildCategoryName(String childCategoryName) {
         return poetryDao.getPoetrySimpleByChildCategoryName(childCategoryName);
+    }
+
+    @Override
+    public List<PoetryChildCategoryVO> getPoetryChildCategoryByPoetryId(int poetryId) {
+        return poetryDao.getPoetryChildCategoryByPoetryId(poetryId);
     }
 }

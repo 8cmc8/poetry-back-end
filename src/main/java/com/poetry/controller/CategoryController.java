@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
@@ -24,11 +25,21 @@ public class CategoryController {
     @Autowired
     private CategoryService categoryService;
     @RequestMapping("/child")
+    @ResponseBody
     public Result<List<RootCategory>> getChildCategory(@RequestParam String rootCategoryName) {
         List<RootCategory> rootCategories = categoryService.getChildCategoryByRootCategoryName(rootCategoryName);
         if(rootCategories != null) {
             return Result.success(rootCategories);
         }
         return Result.fail("该父类目下无子目录");
+    }
+    @RequestMapping("/root")
+    @ResponseBody
+    public Result<List<RootCategory>> getRootCategory() {
+        List<RootCategory> rootCategories = categoryService.getAllRootCategory();
+        if(rootCategories != null) {
+            return Result.success(rootCategories);
+        }
+        return Result.fail("无父类目记录");
     }
 }

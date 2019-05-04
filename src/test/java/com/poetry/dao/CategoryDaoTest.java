@@ -27,4 +27,9 @@ public class CategoryDaoTest {
         List<RootCategory> rootCategories = categoryDao.getChildCategoryByRootCategoryName("选集");
         System.out.print(rootCategories);
     }
+    @Test
+    public void getAllRootCategory() {
+        List<RootCategory> rootCategories = categoryDao.getAllRootCategory();
+        System.out.println(rootCategories);
+    }
 }

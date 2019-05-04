@@ -14,5 +14,5 @@ import java.util.List;
  */
 public interface CategoryService {
     List<RootCategory> getChildCategoryByRootCategoryName(String rootCategoryName);
-
+    List<RootCategory> getAllRootCategory();
 }

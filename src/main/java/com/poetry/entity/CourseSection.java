@@ -15,6 +15,15 @@ public class CourseSection extends BaseEntity {
     private String sectionIntroduce;
     private int sectionTime;
     private String videoUrl;
+    private String sectionOrder;
+
+    public String getSectionOrder() {
+        return sectionOrder;
+    }
+
+    public void setSectionOrder(String sectionOrder) {
+        this.sectionOrder = sectionOrder;
+    }
 
     public int getId() {
         return id;
@@ -73,6 +82,7 @@ public class CourseSection extends BaseEntity {
                 ", sectionIntroduce='" + sectionIntroduce + '\'' +
                 ", sectionTime=" + sectionTime +
                 ", videoUrl='" + videoUrl + '\'' +
+                ", sectionOrder='" + sectionOrder + '\'' +
                 '}';
     }
 }

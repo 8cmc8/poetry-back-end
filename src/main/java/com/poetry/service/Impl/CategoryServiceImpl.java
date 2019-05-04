@@ -24,4 +24,9 @@ public class CategoryServiceImpl implements CategoryService {
     public List<RootCategory> getChildCategoryByRootCategoryName(String rootCategoryName) {
         return categoryDao.getChildCategoryByRootCategoryName(rootCategoryName);
     }
+
+    @Override
+    public List<RootCategory> getAllRootCategory() {
+        return categoryDao.getAllRootCategory();
+    }
 }
