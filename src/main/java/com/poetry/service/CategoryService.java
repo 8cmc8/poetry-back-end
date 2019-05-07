@@ -1,7 +1,7 @@
 package com.poetry.service;
 
 import com.poetry.entity.Category.Category;
-import com.poetry.entity.Category.RootAndChildVO;
+import com.poetry.entity.Category.VO.RootAndChildVO;
 
 import java.util.List;
 
