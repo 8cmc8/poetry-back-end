@@ -24,6 +24,9 @@ public class Topic extends BaseEntity {
     @ApiModelProperty(value = "话题名称")
     private String topicName;
 
+    @ApiModelProperty(value = "用户id")
+    private int userId;
+
     @ApiModelProperty(value = "内容")
     private String content;
 

@@ -236,6 +236,7 @@ DROP TABLE IF EXISTS `topic`;
 CREATE TABLE `topic` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `topic_name` varchar(12) NOT NULL COMMENT '话题标题',
+  `user_id` int(11) DEFAULT NULL COMMENT '用户id',
   `content` varchar(80) NOT NULL COMMENT '话题内容',
   `comment_nums` int(11) NOT NULL DEFAULT '0' COMMENT '评论数',
   `date_create` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '发布时间',
