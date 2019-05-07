@@ -1,5 +1,6 @@
-package com.poetry.entity.Category;
+package com.poetry.entity.Category.VO;
 
+import com.poetry.entity.Category.Category;
 import lombok.Data;
 
 import java.util.List;
