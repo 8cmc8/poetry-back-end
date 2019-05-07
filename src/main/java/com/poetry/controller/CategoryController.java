@@ -30,7 +30,7 @@ public class CategoryController {
         if(rootAndChildVOS != null) {
             return Result.success(rootAndChildVOS);
         }
-        return Result.fail("该父类目下无子目录");
+        return Result.fail("无类目记录");
     }
 //    @RequestMapping("/child")
 //    @ResponseBody

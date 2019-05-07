@@ -53,10 +53,16 @@
     <select id="getByPoetryAuthor" resultType="Poetry">
         select * from poetry where author=#{author}
     </select>
-    <select id="getByDynasty" resultType="Poetry">
+    <select id="getByPoetryDynasty" resultType="Poetry">
         select * from poetry where dynasty=#{dynasty}
     </select>
     <select id="getPoetryChildCategoryByPoetryId" resultType="PoetryChildCategoryVO">
         select distinct child_category_name from category_poetry where poetry_id=#{poetryId}
+    </select>
+    <select id="getAllSimplePoetry" resultType="com.poetry.entity.Poetry.VO.SimplePoetryVO">
+        select id,poetry_name,dynasty,author from poetry
+    </select>
+    <select id="getAllSimplePoetryByName" resultType="com.poetry.entity.Poetry.VO.SimplePoetryVO">
+        select p.id,p.poetry_name,p.dynasty,p.author from poetry as p inner join category_poetry as c on p.id=c.poetry_id where c.child_category_name=#{childCategoryName}
     </select>
 </mapper>

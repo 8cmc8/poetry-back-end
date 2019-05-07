@@ -1,6 +1,7 @@
 package com.poetry.dao;
 
 import com.poetry.entity.Poetry.Poetry;
+import com.poetry.entity.Poetry.VO.SimplePoetryVO;
 import com.poetry.entity.vo.PoetryChildCategoryVO;
 import com.poetry.entity.vo.PoetrySimpleVO;
 
@@ -27,6 +28,10 @@ public interface PoetryDao {
     Poetry getByPoetryId(int poetryId);
 
     Poetry getByPoetryName(String poetryName);
+
+    List<SimplePoetryVO> getAllSimplePoetry();
+
+    List<SimplePoetryVO> getAllSimplePoetryByName(String childCategoryName);
 
     List<Poetry> getByPoetryDynasty(String dynasty);
 

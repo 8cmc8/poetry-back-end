@@ -1,15 +1,17 @@
 package com.poetry.controller;
 
 import com.poetry.common.Result;
+import com.poetry.dao.PoetryDao;
 import com.poetry.entity.Poetry.Poetry;
+import com.poetry.entity.Poetry.VO.SimplePoetryVO;
 import com.poetry.entity.vo.PoetryChildCategoryVO;
 import com.poetry.entity.vo.PoetrySimpleVO;
 import com.poetry.service.PoetryService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,10 +24,38 @@ import java.util.List;
  * @since JDK 1.8
  */
 @Controller
+@RestController
 @RequestMapping("/poetry")
 public class PoetryController {
+    private Logger logger = LoggerFactory.getLogger(PoetryController.class);
     @Autowired
     private PoetryService poetryService;
+    @Autowired
+    private PoetryDao poetryDao;
+    @GetMapping("/simpleListAll")
+    public Result<List<SimplePoetryVO>> getAllSimplePoetry() {
+        try{
+            List<SimplePoetryVO> allSimplePoetry = poetryDao.getAllSimplePoetry();
+            if (allSimplePoetry != null) {
+                return Result.success(allSimplePoetry);
+            }
+        }catch(Exception e) {
+            logger.error("错误为{}",e);
+        }
+        return Result.fail("无诗词");
+    }
+    @GetMapping("/simpleListByName")
+    public Result<List<SimplePoetryVO>> getAllSimplePoetryByName(@RequestParam("name") String childCategoryName) {
+        try{
+            List<SimplePoetryVO> allSimplePoetryByName = poetryDao.getAllSimplePoetryByName(childCategoryName);
+            if (allSimplePoetryByName != null) {
+                return Result.success(allSimplePoetryByName);
+            }
+        }catch(Exception e) {
+            logger.error("错误为{}",e);
+        }
+        return Result.fail("无诗词");
+    }
     @RequestMapping("/simpleList")
     @ResponseBody
     public Result<List<PoetrySimpleVO>> getPoetrySimple(@RequestParam String childCategoryName) {
