@@ -1,6 +1,19 @@
 CREATE DATABASE poetry;
 use poetry;
 
+DROP TABLE IF EXISTS `category`;
+
+CREATE TABLE `category` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `category_name` varchar(10) NOT NULL DEFAULT '' COMMENT '诗词子类目名',
+  `date_create` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `date_update` datetime DEFAULT NULL COMMENT '更新时间',
+  `image_url` mediumtext COMMENT '类目图片地址',
+  `parent_code` int(11) NOT NULL COMMENT '上级目录',
+  PRIMARY KEY (`id`) USING BTREE,
+  KEY `child_category_name` (`category_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 -- ----------------------------
 -- Table structure for category_course
 -- ----------------------------
