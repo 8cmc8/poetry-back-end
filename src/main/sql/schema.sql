@@ -28,18 +28,22 @@ CREATE TABLE `category_game` (
 -- ----------------------------
 -- Table structure for category_poetry
 -- ----------------------------
+
 DROP TABLE IF EXISTS `category_poetry`;
+
 CREATE TABLE `category_poetry` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `poetry_id` int(11) NOT NULL COMMENT '诗词id',
-  `child_category_name` varchar(10) NOT NULL DEFAULT '' COMMENT '诗词子类目名',
+  `child_category_id` int(10) NOT NULL COMMENT '诗词子类目id',
+  `poetry_name` varchar(11) DEFAULT NULL COMMENT '诗词名',
+  `child_category_name` varchar(11) DEFAULT NULL COMMENT '子类目名',
   `date_create` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `date_update` datetime DEFAULT NULL COMMENT '更新时间',
   `image_url` mediumtext COMMENT '子类目图片地址',
   PRIMARY KEY (`id`) USING BTREE,
   KEY `poetry_id` (`poetry_id`),
-  KEY `child_category_name` (`child_category_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+  KEY `child_category_name` (`child_category_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for course
@@ -163,7 +167,9 @@ CREATE TABLE `game_join` (
 -- ----------------------------
 -- Table structure for poetry
 -- ----------------------------
+
 DROP TABLE IF EXISTS `poetry`;
+
 CREATE TABLE `poetry` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `poetry_name` varchar(12) NOT NULL DEFAULT '' COMMENT '诗名',
@@ -176,7 +182,7 @@ CREATE TABLE `poetry` (
   `date_create` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `date_update` datetime DEFAULT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for poetry_collection
@@ -209,21 +215,6 @@ CREATE TABLE `poetry_comment` (
   KEY `poetry_id` (`poetry_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- ----------------------------
--- Table structure for root_category
--- ----------------------------
-DROP TABLE IF EXISTS `root_category`;
-CREATE TABLE `root_category` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `child_category_name` varchar(10) NOT NULL DEFAULT '' COMMENT '诗词子类目名',
-  `root_category_name` varchar(10) NOT NULL DEFAULT '' COMMENT '诗词父类目名',
-  `date_create` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `date_update` datetime DEFAULT NULL COMMENT '更新时间',
-  `image_url` mediumtext COMMENT '子类目图片地址',
-  PRIMARY KEY (`id`) USING BTREE,
-  KEY `child_category_name` (`child_category_name`),
-  KEY `root_category_name` (`root_category_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for topic

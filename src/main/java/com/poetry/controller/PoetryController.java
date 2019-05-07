@@ -67,7 +67,7 @@ public class PoetryController {
     }
     @RequestMapping("/detail")
     @ResponseBody
-    public Result<Poetry> getPoetryDetail(@RequestParam int poetryId) {
+    public Result<Poetry> getPoetryDetail(@RequestParam("id") int poetryId) {
         Poetry poetry = poetryService.getByPoetryId(poetryId);
         if (poetry != null) {
             return Result.success(poetry);
