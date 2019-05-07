@@ -22,4 +22,22 @@
         <!--匹配所有默认请求-->
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+    <!--默认配置,.htm|.do|.json等等配置-->
+    <servlet-mapping>
+        <servlet-name>poetry-dispacher</servlet-name>
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
+    <!-- 配置swagger-bootstrap-ui的url请求路径-->
+    <servlet-mapping>
+        <servlet-name>poetry-dispacher</servlet-name>
+        <url-pattern>/v2/api-docs</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>poetry-dispacher</servlet-name>
+        <url-pattern>/swagger-resources</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>poetry-dispacher</servlet-name>
+        <url-pattern>/v2/api-docs-ext</url-pattern>
+    </servlet-mapping>
 </web-app>

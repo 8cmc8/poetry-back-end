@@ -24,7 +24,11 @@ public class CourseServiceImpl implements CourseService {
 
     @Override
     public List<CourseListVo> listAll() {
-        return courseDao.listAll();
+        List<CourseListVo> courseListVos = courseDao.listAll();
+        for (CourseListVo courseListVo : courseListVos) {
+            System.out.println(courseListVo);
+        }
+        return courseListVos;
     }
 
     @Override

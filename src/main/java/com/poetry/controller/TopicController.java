@@ -6,6 +6,8 @@ import com.poetry.entity.Topic.TopicComment;
 import com.poetry.entity.Topic.vo.TopicDetailVo;
 import com.poetry.entity.Topic.vo.TopicListVo;
 import com.poetry.service.TopicService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +22,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/topic")
+@Api(value = "topic", tags = "话题")
 public class TopicController {
 
     private Logger logger = LoggerFactory.getLogger(TopicController.class);
@@ -33,6 +36,7 @@ public class TopicController {
      * @return
      */
     @GetMapping("/listAll")
+    @ApiOperation(value = "展示所有话题", tags = "话题")
     public Result listAll() {
         try {
             List<TopicListVo> topicListVos = topicService.listAll();
@@ -50,6 +54,7 @@ public class TopicController {
      * @return
      */
     @GetMapping("/getTopicDetail")
+    @ApiOperation(value = "按id查找话题详情", tags = "话题")
     public Result getTopicDetail(@RequestParam("topicId") int topicId) {
         try {
             TopicDetailVo topicDetail = topicService.getTopicDetail(topicId);
@@ -67,6 +72,7 @@ public class TopicController {
      * @return
      */
     @PostMapping("/userComment")
+    @ApiOperation(value = "用户添加评论", tags = "话题")
     public Result userComment(@RequestBody TopicComment topicComment) {
         try {
             topicService.userComment(topicComment);
@@ -83,6 +89,7 @@ public class TopicController {
      * @return
      */
     @PostMapping("/userTopic")
+    @ApiOperation(value = "用户新建话题", tags = "话题")
     public Result userTopic(@RequestBody Topic topic) {
         try {
             topicService.userTopic(topic);

@@ -4,6 +4,8 @@ import com.poetry.common.Result;
 import com.poetry.entity.Course.Course;
 import com.poetry.entity.Course.vo.CourseListVo;
 import com.poetry.service.CourseService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +26,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/course")
+@Api(value = "/course", tags = "课程")
 public class CourseController {
 
     private Logger logger = LoggerFactory.getLogger(CourseController.class);
@@ -41,6 +44,7 @@ public class CourseController {
 //        return Result.fail("无课程");
 //    }
     @GetMapping("/listAll")
+    @ApiOperation(value = "展示所有课程", tags = "课程")
     public Result listAll() {
         try {
             List<CourseListVo> courseListVos = courseService.listAll();
@@ -52,6 +56,7 @@ public class CourseController {
     }
 
     @GetMapping("/selectCourseById")
+    @ApiOperation(value = "按id查找课程", tags = "课程")
     public Result selectCourseById(@RequestParam("id") int id) {
         try {
             Course course = courseService.selectCourseById(id);

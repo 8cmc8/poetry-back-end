@@ -1,5 +1,8 @@
 package com.poetry.common;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 /**
  * ClassName: Result <br/>
  * Description: <br/>
@@ -8,10 +11,15 @@ package com.poetry.common;
  * @author admin<br />
  * @since JDK 1.8
  */
+@ApiModel("返回结果通用类Result")
 public class Result<T> {
+    @ApiModelProperty("是否成功")
     private boolean success = false;
+    @ApiModelProperty("具体数据")
     private T data = null;
+    @ApiModelProperty("返回信息")
     private String msg = "";
+    @ApiModelProperty("结果状态码")
     private String code = "500";
 
     public Result() {
@@ -84,15 +92,5 @@ public class Result<T> {
     public Result<T> setCode(String code) {
         this.code = code;
         return this;
-    }
-
-    @Override
-    public String toString() {
-        return "Result{" +
-                "success=" + success +
-                ", data=" + data +
-                ", msg='" + msg + '\'' +
-                ", code='" + code + '\'' +
-                '}';
     }
 }
