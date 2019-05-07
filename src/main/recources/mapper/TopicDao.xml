@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.poetry.dao.TopicDao">
+    <select id="listAll" resultType="com.poetry.entity.Topic.vo.TopicListVo">
+        select id, topic_name, content, comment_nums from topic
+    </select>
+    <select id="selectTopicById" resultType="com.poetry.entity.Topic.vo.TopicDetailVo">
+        select id, topic_name, content, comment_nums from topic where id=#{id}
+    </select>
+    <select id="selectTopicDetailById" resultType="com.poetry.entity.Topic.vo.TopicCommentVo">
+    select b.user_id, a.user_name, b.`comment` from `user` a inner join
+    (select user_id, `comment` from topic_comment where topic_id=1) b
+    on a.id=b.user_id
+    </select>
+    <insert id="insertTopicComment" parameterType="com.poetry.entity.Topic.TopicComment">
+    insert into topic_comment (user_id,topic_id, `comment`) values
+    (#{topicComment.userId}, #{topicComment.topicId}, #{topicComment.comment})
+    </insert>
+    <insert id="insertTopic" parameterType="Topic">
+        insert into topic (topic_name, content, comment_nums) values
+        (#{topic.topicName}, #{topic.content}, 0)
+    </insert>
+</mapper>
