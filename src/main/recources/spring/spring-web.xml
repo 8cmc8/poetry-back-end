@@ -28,7 +28,4 @@
     <context:annotation-config />
     <!--重要！将你的SwaggerConfig配置类注入-->
     <bean class="com.poetry.config.SwaggerConfig"/>
-    <!--重要！配置swagger资源不被拦截-->
-    <mvc:resources mapping="swagger-ui.html" location="classpath:/META-INF/resources/" />
-    <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/" />
 </beans>

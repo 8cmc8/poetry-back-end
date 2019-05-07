@@ -1,5 +1,10 @@
 package com.poetry.entity.vo;
 
+import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 /**
  * ClassName: CourseSimpleVO <br/>
  * Description: <br/>
@@ -8,71 +13,25 @@ package com.poetry.entity.vo;
  * @author admin<br />
  * @since JDK 1.8
  */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CourseSimpleVO {
+    @ApiModelProperty(value = "图片地址")
     private String imageUrl;
+
+    @ApiModelProperty(value = "课程名称")
     private String courseName;
+
+    @ApiModelProperty(value = "是否免费")
     private int free;
+
+    @ApiModelProperty(value = "课程价格")
     private int coursePrice;
+
+    @ApiModelProperty(value = "星级")
     private int starLevel;
-    private int comment;
 
-    public String getImageUrl() {
-        return imageUrl;
-    }
-
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
-
-    public String getCourseName() {
-        return courseName;
-    }
-
-    public void setCourseName(String courseName) {
-        this.courseName = courseName;
-    }
-
-    public int getFree() {
-        return free;
-    }
-
-    public void setFree(int free) {
-        this.free = free;
-    }
-
-    public int getCoursePrice() {
-        return coursePrice;
-    }
-
-    public void setCoursePrice(int coursePrice) {
-        this.coursePrice = coursePrice;
-    }
-
-    public int getStarLevel() {
-        return starLevel;
-    }
-
-    public void setStarLevel(int starLevel) {
-        this.starLevel = starLevel;
-    }
-
-    public int getComment() {
-        return comment;
-    }
-
-    public void setComment(int comment) {
-        this.comment = comment;
-    }
-
-    @Override
-    public String toString() {
-        return "CourseSimpleVO{" +
-                "imageUrl='" + imageUrl + '\'' +
-                ", courseName='" + courseName + '\'' +
-                ", free=" + free +
-                ", coursePrice=" + coursePrice +
-                ", starLevel=" + starLevel +
-                ", comment=" + comment +
-                '}';
-    }
+    @ApiModelProperty(value = "收藏数")
+    private int commentNums;
 }

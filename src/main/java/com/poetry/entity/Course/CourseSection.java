@@ -1,6 +1,10 @@
 package com.poetry.entity.Course;
 
 import com.poetry.entity.Base.BaseEntity;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * ClassName: CourseSection <br/>
@@ -10,81 +14,28 @@ import com.poetry.entity.Base.BaseEntity;
  * @author admin<br />
  * @since JDK 1.8
  */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CourseSection extends BaseEntity {
+    @ApiModelProperty(value = "id")
     private int id;
+
+    @ApiModelProperty(value = "课程id")
     private int courseId;
+
+    @ApiModelProperty(value = "章节名")
     private String sectionName;
+
+    @ApiModelProperty(value = "章节简介")
     private String sectionIntroduce;
+
+    @ApiModelProperty(value = "章节总时长")
     private int sectionTime;
+
+    @ApiModelProperty(value = "地址链接")
     private String videoUrl;
+
+    @ApiModelProperty(value = "章节序号")
     private String sectionOrder;
-
-    public String getSectionOrder() {
-        return sectionOrder;
-    }
-
-    public void setSectionOrder(String sectionOrder) {
-        this.sectionOrder = sectionOrder;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getCourseId() {
-        return courseId;
-    }
-
-    public void setCourseId(int courseId) {
-        this.courseId = courseId;
-    }
-
-    public String getSectionName() {
-        return sectionName;
-    }
-
-    public void setSectionName(String sectionName) {
-        this.sectionName = sectionName;
-    }
-
-    public String getSectionIntroduce() {
-        return sectionIntroduce;
-    }
-
-    public void setSectionIntroduce(String sectionIntroduce) {
-        this.sectionIntroduce = sectionIntroduce;
-    }
-
-    public int getSectionTime() {
-        return sectionTime;
-    }
-
-    public void setSectionTime(int sectionTime) {
-        this.sectionTime = sectionTime;
-    }
-
-    public String getVideoUrl() {
-        return videoUrl;
-    }
-
-    public void setVideoUrl(String videoUrl) {
-        this.videoUrl = videoUrl;
-    }
-
-    @Override
-    public String toString() {
-        return "CourseSection{" +
-                "id=" + id +
-                ", courseId=" + courseId +
-                ", sectionName='" + sectionName + '\'' +
-                ", sectionIntroduce='" + sectionIntroduce + '\'' +
-                ", sectionTime=" + sectionTime +
-                ", videoUrl='" + videoUrl + '\'' +
-                ", sectionOrder='" + sectionOrder + '\'' +
-                '}';
-    }
 }

@@ -1,6 +1,10 @@
 package com.poetry.entity.Course;
 
 import com.poetry.entity.Base.BaseEntity;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * ClassName: CourseOrder <br/>
@@ -10,51 +14,19 @@ import com.poetry.entity.Base.BaseEntity;
  * @author admin<br />
  * @since JDK 1.8
  */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CourseOrder extends BaseEntity {
+    @ApiModelProperty(value = "id")
     private int id;
+
+    @ApiModelProperty(value = "用户id")
     private int userId;
+
+    @ApiModelProperty(value = "课程id")
     private int courseId;
+
+    @ApiModelProperty(value = "成交价")
     private double dealPrice;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
-
-    public int getCourseId() {
-        return courseId;
-    }
-
-    public void setCourseId(int courseId) {
-        this.courseId = courseId;
-    }
-
-    public double getDealPrice() {
-        return dealPrice;
-    }
-
-    public void setDealPrice(double dealPrice) {
-        this.dealPrice = dealPrice;
-    }
-
-    @Override
-    public String toString() {
-        return "CourseOrder{" +
-                "id=" + id +
-                ", userId=" + userId +
-                ", courseId=" + courseId +
-                ", dealPrice=" + dealPrice +
-                '}';
-    }
 }

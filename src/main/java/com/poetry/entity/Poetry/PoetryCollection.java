@@ -1,6 +1,10 @@
 package com.poetry.entity.Poetry;
 
 import com.poetry.entity.Base.BaseEntity;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * ClassName: PoetryCollection <br/>
@@ -10,41 +14,16 @@ import com.poetry.entity.Base.BaseEntity;
  * @author admin<br />
  * @since JDK 1.8
  */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class PoetryCollection extends BaseEntity {
+    @ApiModelProperty(value = "id")
     private int id;
+
+    @ApiModelProperty(value = "用户id")
     private int userId;
+
+    @ApiModelProperty(value = "诗词id")
     private int poetryId;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
-
-    public int getPoetryId() {
-        return poetryId;
-    }
-
-    public void setPoetryId(int poetryId) {
-        this.poetryId = poetryId;
-    }
-
-    @Override
-    public String toString() {
-        return "PoetryCollection{" +
-                "id=" + id +
-                ", userId=" + userId +
-                ", poetryId=" + poetryId +
-                '}';
-    }
 }

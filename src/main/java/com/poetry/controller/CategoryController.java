@@ -3,10 +3,12 @@ package com.poetry.controller;
 import com.poetry.common.Result;
 import com.poetry.entity.Category.VO.RootAndChildVO;
 import com.poetry.service.CategoryService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
@@ -18,16 +20,18 @@ import java.util.List;
  * @author admin<br />
  * @since JDK 1.8
  */
-@Controller
+@RestController
 @RequestMapping("/category")
+@Api(value = "/category", tags = "目录")
 public class CategoryController {
     @Autowired
     private CategoryService categoryService;
-    @RequestMapping("/rootAndChild")
-    @ResponseBody
+
+    @GetMapping("/rootAndChild")
+    @ApiOperation(value = "展示所有目录", tags = "目录")
     public Result<List<RootAndChildVO>> getAllCategory() {
         List<RootAndChildVO> rootAndChildVOS = categoryService.getAllCategory();
-        if(rootAndChildVOS != null) {
+        if (rootAndChildVOS != null) {
             return Result.success(rootAndChildVOS);
         }
         return Result.fail("无类目记录");

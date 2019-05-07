@@ -1,6 +1,9 @@
 package com.poetry.entity.Poetry.VO;
 
+import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * ClassName: SimplePoetryVO
@@ -10,9 +13,18 @@ import lombok.Data;
  * @author cmc
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class SimplePoetryVO {
+    @ApiModelProperty(value = "id")
     private int id;
+
+    @ApiModelProperty(value = "诗词名称")
     private String poetryName;
+
+    @ApiModelProperty(value = "朝代")
     private String dynasty;
+
+    @ApiModelProperty(value = "作者")
     private String author;
 }
