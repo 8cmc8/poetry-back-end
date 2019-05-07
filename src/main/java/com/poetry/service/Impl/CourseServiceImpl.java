@@ -2,9 +2,7 @@ package com.poetry.service.Impl;
 
 import com.poetry.dao.CourseDao;
 import com.poetry.entity.Course.Course;
-import com.poetry.entity.Course.CourseCollection;
-import com.poetry.entity.Course.CourseComment;
-import com.poetry.entity.Course.CourseSection;
+import com.poetry.entity.Course.vo.CourseListVo;
 import com.poetry.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,28 +23,38 @@ public class CourseServiceImpl implements CourseService {
     private CourseDao courseDao;
 
     @Override
-    public List<Course> getCourseAll() {
-        return courseDao.getCourseAll();
+    public List<CourseListVo> listAll() {
+        return courseDao.listAll();
     }
 
     @Override
-    public Course getCourseByCourseName(String courseName) {
-
-        return courseDao.getCourseByCourseName(courseName);
+    public Course selectCourseById(int id) {
+        return courseDao.selectCourseById(id);
     }
 
-    @Override
-    public List<CourseSection> getCourseSectionByCourseId(int courseId) {
-        return courseDao.getCourseSectionByCourseId(courseId);
-    }
-
-    @Override
-    public List<CourseComment> getCourseCommentByCourseId(int courseId) {
-        return courseDao.getCourseCommentByCourseId(courseId);
-    }
-
-    @Override
-    public List<CourseCollection> getCourseCollectionByCourseId(int courseId) {
-        return courseDao.getCourseCollectionByCourseId(courseId);
-    }
+//    @Override
+//    public List<Course> getCourseAll() {
+//        return courseDao.getCourseAll();
+//    }
+//
+//    @Override
+//    public Course getCourseByCourseName(String courseName) {
+//
+//        return courseDao.getCourseByCourseName(courseName);
+//    }
+//
+//    @Override
+//    public List<CourseSection> getCourseSectionByCourseId(int courseId) {
+//        return courseDao.getCourseSectionByCourseId(courseId);
+//    }
+//
+//    @Override
+//    public List<CourseComment> getCourseCommentByCourseId(int courseId) {
+//        return courseDao.getCourseCommentByCourseId(courseId);
+//    }
+//
+//    @Override
+//    public List<CourseCollection> getCourseCollectionByCourseId(int courseId) {
+//        return courseDao.getCourseCollectionByCourseId(courseId);
+//    }
 }

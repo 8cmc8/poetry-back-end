@@ -3,5 +3,18 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.poetry.dao.CourseDao">
-
+    <select id="listAll" resultType="com.poetry.entity.Course.vo.CourseListVo">
+    select x.id, x.course_name, x.image_url, round(x.star_level) as star_level, y.collection_nums from
+    (select a.id, a.course_name, a.image_url, b.star_level from
+    (select id, course_name, image_url from course) a
+    LEFT JOIN
+    (select course_id, avg(star_level) as star_level from course_comment group by course_id) b
+    on a.id=b.course_id) x
+    LEFT JOIN
+    (select course_id, count(id) as collection_nums from course_collection group by course_id) y
+    on x.id=y.course_id
+    </select>
+    <select id="selectCourseById" resultType="Course">
+        select * from course where id=#{id}
+    </select>
 </mapper>

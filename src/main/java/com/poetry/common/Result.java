@@ -34,6 +34,10 @@ public class Result<T> {
         return r;
     }
 
+    public static <T> Result<T> fail() {
+        return fail("100", "未知错误，请联系管理员");
+    }
+
     public static <T> Result<T> fail(String msg) {
         return fail("500", msg);
     }

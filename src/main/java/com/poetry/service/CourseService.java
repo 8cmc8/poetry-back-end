@@ -1,9 +1,8 @@
 package com.poetry.service;
 
 import com.poetry.entity.Course.Course;
-import com.poetry.entity.Course.CourseCollection;
-import com.poetry.entity.Course.CourseComment;
-import com.poetry.entity.Course.CourseSection;
+import com.poetry.entity.Course.vo.CourseListVo;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -16,9 +15,12 @@ import java.util.List;
  * @since JDK 1.8
  */
 public interface CourseService {
-    List<Course> getCourseAll();
-    Course getCourseByCourseName(String courseName);
-    List<CourseSection> getCourseSectionByCourseId(int courseId);
-    List<CourseComment> getCourseCommentByCourseId(int courseId);
-    List<CourseCollection> getCourseCollectionByCourseId(int courseId);
+    //    List<Course> getCourseAll();
+//    Course getCourseByCourseName(String courseName);
+//    List<CourseSection> getCourseSectionByCourseId(int courseId);
+//    List<CourseComment> getCourseCommentByCourseId(int courseId);
+//    List<CourseCollection> getCourseCollectionByCourseId(int courseId);
+    List<CourseListVo> listAll();
+
+    Course selectCourseById(@RequestParam("id") int id);
 }

@@ -1,9 +1,8 @@
 package com.poetry.dao;
 
 import com.poetry.entity.Course.Course;
-import com.poetry.entity.Course.CourseCollection;
-import com.poetry.entity.Course.CourseComment;
-import com.poetry.entity.Course.CourseSection;
+import com.poetry.entity.Course.vo.CourseListVo;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -16,9 +15,12 @@ import java.util.List;
  * @since JDK 1.8
  */
 public interface CourseDao {
-    List<Course> getCourseAll();
-    Course getCourseByCourseName(String courseName);
-    List<CourseSection> getCourseSectionByCourseId(int courseId);
-    List<CourseComment> getCourseCommentByCourseId(int courseId);
-    List<CourseCollection> getCourseCollectionByCourseId(int courseId);
+    //    List<Course> getCourseAll();
+//    Course getCourseByCourseName(String courseName);
+//    List<CourseSection> getCourseSectionByCourseId(int courseId);
+//    List<CourseComment> getCourseCommentByCourseId(int courseId);
+//    List<CourseCollection> getCourseCollectionByCourseId(int courseId);
+    List<CourseListVo> listAll();
+
+    Course selectCourseById(@Param("id") int id);
 }
