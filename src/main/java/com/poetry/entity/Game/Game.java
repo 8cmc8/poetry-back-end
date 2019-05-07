@@ -1,6 +1,6 @@
-package com.poetry.entity;
+package com.poetry.entity.Game;
 
-import com.sun.xml.internal.rngom.parse.host.Base;
+import com.poetry.entity.Base.BaseEntity;
 
 /**
  * ClassName: Game <br/>

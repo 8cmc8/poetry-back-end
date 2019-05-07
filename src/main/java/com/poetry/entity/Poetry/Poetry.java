@@ -1,4 +1,6 @@
-package com.poetry.entity;
+package com.poetry.entity.Poetry;
+
+import com.poetry.entity.Base.BaseEntity;
 
 /**
  * ClassName: PoetryDao <br/>

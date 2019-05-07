@@ -1,6 +1,7 @@
 package com.poetry.service;
 
-import com.poetry.entity.RootCategory;
+import com.poetry.entity.Category.Category;
+import com.poetry.entity.Category.RootAndChildVO;
 
 import java.util.List;
 
@@ -13,6 +14,10 @@ import java.util.List;
  * @since JDK 1.8
  */
 public interface CategoryService {
-    List<RootCategory> getChildCategoryByRootCategoryName(String rootCategoryName);
-    List<RootCategory> getAllRootCategory();
+    //返回所有父类目
+    List<Category> getAllRootCategory();
+    //根据父类目id返回子类目
+    List<Category> getAllChildCategory(int id);
+    //返回所有组合后的类目
+    List<RootAndChildVO> getAllCategory();
 }

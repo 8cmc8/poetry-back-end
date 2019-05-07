@@ -1,9 +1,9 @@
 package com.poetry.dao;
 
-import com.poetry.entity.Course;
-import com.poetry.entity.CourseCollection;
-import com.poetry.entity.CourseComment;
-import com.poetry.entity.CourseSection;
+import com.poetry.entity.Course.Course;
+import com.poetry.entity.Course.CourseCollection;
+import com.poetry.entity.Course.CourseComment;
+import com.poetry.entity.Course.CourseSection;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

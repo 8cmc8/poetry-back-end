@@ -1,7 +1,7 @@
 package com.poetry.service.Impl;
 
 import com.poetry.dao.PoetryDao;
-import com.poetry.entity.Poetry;
+import com.poetry.entity.Poetry.Poetry;
 import com.poetry.entity.vo.PoetryChildCategoryVO;
 import com.poetry.entity.vo.PoetrySimpleVO;
 import com.poetry.service.PoetryService;

@@ -1,6 +1,6 @@
 package com.poetry.dao;
 
-import com.poetry.entity.RootCategory;
+import com.poetry.entity.Category.Category;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,13 +23,13 @@ public class CategoryDaoTest {
     @Autowired
     private CategoryDao categoryDao;
     @Test
-    public void getChildCategoryByRootCategoryName() {
-        List<RootCategory> rootCategories = categoryDao.getChildCategoryByRootCategoryName("选集");
-        System.out.print(rootCategories);
+    public void getAllRootCategory() {
+        List<Category> categories = categoryDao.getAllRootCategory();
+        System.out.println(categories);
     }
     @Test
-    public void getAllRootCategory() {
-        List<RootCategory> rootCategories = categoryDao.getAllRootCategory();
-        System.out.println(rootCategories);
+    public void getAllChildCategory() {
+        List<Category> categories = categoryDao.getAllChildCategory(8);
+        System.out.println(categories);
     }
 }

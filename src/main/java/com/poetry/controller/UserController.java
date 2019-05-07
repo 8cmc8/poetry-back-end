@@ -1,7 +1,7 @@
 package com.poetry.controller;
 
 import com.poetry.common.Result;
-import com.poetry.entity.User;
+import com.poetry.entity.User.User;
 import com.poetry.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -1,6 +1,6 @@
 package com.poetry.dao;
 
-import com.poetry.entity.User;
+import com.poetry.entity.User.User;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

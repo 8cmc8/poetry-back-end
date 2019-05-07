@@ -1,4 +1,4 @@
-package com.poetry.entity;
+package com.poetry.entity.Base;
 
 import java.util.Date;
 

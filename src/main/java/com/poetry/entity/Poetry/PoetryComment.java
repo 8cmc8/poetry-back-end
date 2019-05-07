@@ -1,25 +1,27 @@
-package com.poetry.entity;
+package com.poetry.entity.Poetry;
+
+import com.poetry.entity.Base.BaseEntity;
 
 /**
- * ClassName: GameJoin <br/>
+ * ClassName: PoetryComment <br/>
  * Description: <br/>
- * date: 2019-04-25 22:44<br/>
+ * date: 2019-04-25 22:31<br/>
  *
  * @author admin<br />
  * @since JDK 1.8
  */
-public class GameJoin extends BaseEntity {
-    private int id;
+public class PoetryComment extends BaseEntity {
+    private int Id;
     private int userId;
-    private int gameId;
+    private int poetryId;
     private String comment;
 
     public int getId() {
-        return id;
+        return Id;
     }
 
     public void setId(int id) {
-        this.id = id;
+        Id = id;
     }
 
     public int getUserId() {
@@ -30,12 +32,12 @@ public class GameJoin extends BaseEntity {
         this.userId = userId;
     }
 
-    public int getGameId() {
-        return gameId;
+    public int getPoetryId() {
+        return poetryId;
     }
 
-    public void setGameId(int gameId) {
-        this.gameId = gameId;
+    public void setPoetryId(int poetryId) {
+        this.poetryId = poetryId;
     }
 
     public String getComment() {
@@ -48,10 +50,10 @@ public class GameJoin extends BaseEntity {
 
     @Override
     public String toString() {
-        return "GameJoin{" +
-                "id=" + id +
+        return "PoetryComment{" +
+                "Id=" + Id +
                 ", userId=" + userId +
-                ", gameId=" + gameId +
+                ", poetryId=" + poetryId +
                 ", comment='" + comment + '\'' +
                 '}';
     }

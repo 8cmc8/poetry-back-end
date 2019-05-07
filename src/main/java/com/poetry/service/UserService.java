@@ -1,6 +1,6 @@
 package com.poetry.service;
 
-import com.poetry.entity.User;
+import com.poetry.entity.User.User;
 
 import java.util.List;
 

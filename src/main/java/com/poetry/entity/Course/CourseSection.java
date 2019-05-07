@@ -1,4 +1,6 @@
-package com.poetry.entity;
+package com.poetry.entity.Course;
+
+import com.poetry.entity.Base.BaseEntity;
 
 /**
  * ClassName: CourseSection <br/>

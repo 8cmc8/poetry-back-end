@@ -1,7 +1,7 @@
 package com.poetry.controller;
 
 import com.poetry.common.Result;
-import com.poetry.entity.Course;
+import com.poetry.entity.Course.Course;
 import com.poetry.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -33,6 +33,4 @@ public class CourseController {
         }
         return Result.fail("无课程");
     }
-
-
 }

@@ -1,4 +1,6 @@
-package com.poetry.entity;
+package com.poetry.entity.User;
+
+import com.poetry.entity.Base.BaseEntity;
 
 import java.util.Date;
 
@@ -10,7 +12,7 @@ import java.util.Date;
  * @author admin<br />
  * @since JDK 1.8
  */
-public class User extends BaseEntity{
+public class User extends BaseEntity {
     private int id;
     private String userName;
     private String password;

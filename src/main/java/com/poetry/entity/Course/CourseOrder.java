@@ -1,17 +1,20 @@
-package com.poetry.entity;
+package com.poetry.entity.Course;
+
+import com.poetry.entity.Base.BaseEntity;
 
 /**
- * ClassName: CourseCollection <br/>
+ * ClassName: CourseOrder <br/>
  * Description: <br/>
- * date: 2019-04-25 22:37<br/>
+ * date: 2019-04-25 22:54<br/>
  *
  * @author admin<br />
  * @since JDK 1.8
  */
-public class CourseCollection extends BaseEntity {
+public class CourseOrder extends BaseEntity {
     private int id;
     private int userId;
     private int courseId;
+    private double dealPrice;
 
     public int getId() {
         return id;
@@ -37,12 +40,21 @@ public class CourseCollection extends BaseEntity {
         this.courseId = courseId;
     }
 
+    public double getDealPrice() {
+        return dealPrice;
+    }
+
+    public void setDealPrice(double dealPrice) {
+        this.dealPrice = dealPrice;
+    }
+
     @Override
     public String toString() {
-        return "CourseCollection{" +
+        return "CourseOrder{" +
                 "id=" + id +
                 ", userId=" + userId +
                 ", courseId=" + courseId +
+                ", dealPrice=" + dealPrice +
                 '}';
     }
 }

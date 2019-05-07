@@ -1,4 +1,6 @@
-package com.poetry.entity;
+package com.poetry.entity.Topic;
+
+import com.poetry.entity.Base.BaseEntity;
 
 /**
  * ClassName: Topic <br/>
@@ -8,7 +10,7 @@ package com.poetry.entity;
  * @author admin<br />
  * @since JDK 1.8
  */
-public class Topic extends BaseEntity{
+public class Topic extends BaseEntity {
     private int id;
     private String topicName;
     private String content;

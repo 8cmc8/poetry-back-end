@@ -1,25 +1,26 @@
-package com.poetry.entity;
+package com.poetry.entity.Poetry;
+
+import com.poetry.entity.Base.BaseEntity;
 
 /**
- * ClassName: PoetryComment <br/>
+ * ClassName: PoetryCollection <br/>
  * Description: <br/>
- * date: 2019-04-25 22:31<br/>
+ * date: 2019-04-25 22:30<br/>
  *
  * @author admin<br />
  * @since JDK 1.8
  */
-public class PoetryComment extends BaseEntity {
-    private int Id;
+public class PoetryCollection extends BaseEntity {
+    private int id;
     private int userId;
     private int poetryId;
-    private String comment;
 
     public int getId() {
-        return Id;
+        return id;
     }
 
     public void setId(int id) {
-        Id = id;
+        this.id = id;
     }
 
     public int getUserId() {
@@ -38,21 +39,12 @@ public class PoetryComment extends BaseEntity {
         this.poetryId = poetryId;
     }
 
-    public String getComment() {
-        return comment;
-    }
-
-    public void setComment(String comment) {
-        this.comment = comment;
-    }
-
     @Override
     public String toString() {
-        return "PoetryComment{" +
-                "Id=" + Id +
+        return "PoetryCollection{" +
+                "id=" + id +
                 ", userId=" + userId +
                 ", poetryId=" + poetryId +
-                ", comment='" + comment + '\'' +
                 '}';
     }
 }

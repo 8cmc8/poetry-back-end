@@ -9,4 +9,5 @@ package com.poetry.controller;
  * @since JDK 1.8
  */
 public class GameController {
+
 }

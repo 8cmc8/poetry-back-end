@@ -1,10 +1,10 @@
 package com.poetry.service.Impl;
 
 import com.poetry.dao.CourseDao;
-import com.poetry.entity.Course;
-import com.poetry.entity.CourseCollection;
-import com.poetry.entity.CourseComment;
-import com.poetry.entity.CourseSection;
+import com.poetry.entity.Course.Course;
+import com.poetry.entity.Course.CourseCollection;
+import com.poetry.entity.Course.CourseComment;
+import com.poetry.entity.Course.CourseSection;
 import com.poetry.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

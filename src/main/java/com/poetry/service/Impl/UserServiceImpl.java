@@ -1,7 +1,7 @@
 package com.poetry.service.Impl;
 
 import com.poetry.dao.UserDao;
-import com.poetry.entity.User;
+import com.poetry.entity.User.User;
 import com.poetry.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

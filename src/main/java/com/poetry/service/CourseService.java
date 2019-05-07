@@ -1,9 +1,9 @@
 package com.poetry.service;
 
-import com.poetry.entity.Course;
-import com.poetry.entity.CourseCollection;
-import com.poetry.entity.CourseComment;
-import com.poetry.entity.CourseSection;
+import com.poetry.entity.Course.Course;
+import com.poetry.entity.Course.CourseCollection;
+import com.poetry.entity.Course.CourseComment;
+import com.poetry.entity.Course.CourseSection;
 
 import java.util.List;
 
