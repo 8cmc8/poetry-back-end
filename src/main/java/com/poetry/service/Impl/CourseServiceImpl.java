@@ -36,7 +36,31 @@ public class CourseServiceImpl implements CourseService {
         return courseDao.selectCourseById(id);
     }
 
-//    @Override
+    @Override
+    public Boolean insertCourseCollection(int userId, int courseId) {
+        int i = courseDao.insertCourseCollection(userId,courseId);
+        return i > 0;
+    }
+
+    @Override
+    public List<Course> getAllCollectedCourseByUserId(int userId) {
+        List<Course> allCollectedCourseByUserId = courseDao.getAllCollectedCourseByUserId(userId);
+        return allCollectedCourseByUserId;
+    }
+
+    @Override
+    public Boolean deleteCollectedCourse(int userId, int courseId) {
+        int i = courseDao.deleteCollectedCourse(userId, courseId);
+        return i > 0;
+    }
+
+    @Override
+    public Boolean commitCourseStar(int userId, int courseId, int starLevel) {
+        int i = courseDao.commitCourseStar(userId, courseId, starLevel);
+        return i > 0;
+    }
+
+    //    @Override
 //    public List<Course> getCourseAll() {
 //        return courseDao.getCourseAll();
 //    }

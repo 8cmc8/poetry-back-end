@@ -65,4 +65,10 @@
     <select id="getAllSimplePoetryByName" resultType="com.poetry.entity.Poetry.VO.SimplePoetryVO">
         select p.id,p.poetry_name,p.dynasty,p.author from poetry as p inner join category_poetry as c on p.id=c.poetry_id where c.child_category_name=#{childCategoryName}
     </select>
+    <select id="getAllChildCategoryNameById" resultType="com.poetry.entity.Poetry.VO.CategoryVO">
+        select category_name from category as c inner join category_poetry as p on c.id=p.child_category_id where p.poetry_id=#{id}
+    </select>
+    <select id="getAllCollectedPoetryByUserId" resultType="Poetry">
+        select * from poetry as p inner join poetry_collection as c on p.id=c.poetry_id where c.user_id = #{id}
+    </select>
 </mapper>

@@ -3,7 +3,9 @@ package com.poetry.controller;
 import com.poetry.common.Result;
 import com.poetry.dao.PoetryDao;
 import com.poetry.entity.Poetry.Poetry;
+import com.poetry.entity.Poetry.VO.CategoryVO;
 import com.poetry.entity.Poetry.VO.SimplePoetryVO;
+import com.poetry.entity.User.VO.UserPoetryVO;
 import com.poetry.entity.vo.PoetryChildCategoryVO;
 import com.poetry.entity.vo.PoetrySimpleVO;
 import com.poetry.service.PoetryService;
@@ -92,6 +94,19 @@ public class PoetryController {
         }
         return Result.fail("诗词不存在");
     }
+    @GetMapping("/detail/category")
+    @ApiOperation(value = "按id获取诗词所属子类目", tags = "诗词")
+    public Result<List<CategoryVO>> getAllChildCategory(@RequestParam("id") int poetryId) {
+        try {
+            List<CategoryVO> allChildCategoryNameById = poetryDao.getAllChildCategoryNameById(poetryId);
+            if (allChildCategoryNameById != null) {
+                return Result.success(allChildCategoryNameById);
+            }
+        } catch (Exception e) {
+            logger.error("", e);
+        }
+        return Result.fail("诗词不存在");
+    }
 
     @GetMapping("/getAll")
     public Result<List<Poetry>> getAll(){
@@ -105,4 +120,5 @@ public class PoetryController {
         List<PoetryChildCategoryVO> poetryChildCategoryVOList = poetryService.getPoetryChildCategoryByPoetryId(poetryId);
         return Result.success(poetryChildCategoryVOList);
     }
+
 }

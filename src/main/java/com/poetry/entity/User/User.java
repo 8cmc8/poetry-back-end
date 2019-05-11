@@ -29,7 +29,7 @@ public class User extends BaseEntity {
     @ApiModelProperty(value = "密码")
     private String password;
 
-    //1：男，2：女
+    //1：男，0：女
     @ApiModelProperty(value = "性别")
     private int gender;
 

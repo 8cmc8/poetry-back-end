@@ -1,6 +1,7 @@
 package com.poetry.dao;
 
 import com.poetry.entity.Course.Course;
+import com.poetry.entity.Course.CourseCollection;
 import com.poetry.entity.Course.vo.CourseListVo;
 import org.apache.ibatis.annotations.Param;
 
@@ -21,6 +22,9 @@ public interface CourseDao {
 //    List<CourseComment> getCourseCommentByCourseId(int courseId);
 //    List<CourseCollection> getCourseCollectionByCourseId(int courseId);
     List<CourseListVo> listAll();
-
     Course selectCourseById(@Param("id") int id);
+    int insertCourseCollection(@Param("userId") int userId,@Param("courseId") int courseId);
+    List<Course> getAllCollectedCourseByUserId(int userId);
+    int deleteCollectedCourse(@Param("userId") int userId,@Param("courseId") int courseId);
+    int commitCourseStar(@Param("userId") int userId,@Param("courseId") int courseId,@Param("starLevel") int starLevel);
 }

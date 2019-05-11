@@ -2,6 +2,7 @@ package com.poetry.service;
 
 import com.poetry.entity.Course.Course;
 import com.poetry.entity.Course.vo.CourseListVo;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
@@ -23,4 +24,12 @@ public interface CourseService {
     List<CourseListVo> listAll();
 
     Course selectCourseById(@RequestParam("id") int id);
+
+    Boolean insertCourseCollection(int userId,int courseId);
+
+    List<Course> getAllCollectedCourseByUserId(int userId);
+
+    Boolean deleteCollectedCourse(int userId,int courseId);
+
+    Boolean commitCourseStar(int userId,int courseId,int starLevel);
 }

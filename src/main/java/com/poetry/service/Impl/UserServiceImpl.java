@@ -1,6 +1,8 @@
 package com.poetry.service.Impl;
 
+import com.poetry.dao.PoetryDao;
 import com.poetry.dao.UserDao;
+import com.poetry.entity.Poetry.Poetry;
 import com.poetry.entity.User.User;
 import com.poetry.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +23,9 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     UserDao userDao;
+
+    @Autowired
+    PoetryDao poetryDao;
 
     @Override
     public User getByName(String userName) {
@@ -54,5 +59,34 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> getAll() {
         return userDao.getAllUser();
+    }
+
+    @Override
+    public Boolean insertCollectionWithPoetry(int userId, int poetryId) {
+        int i = userDao.insertCollectionWithPoetry(userId,poetryId);
+        return i > 0;
+    }
+
+    @Override
+    public User getById(int id) {
+        return userDao.getByUserId(id);
+    }
+
+    @Override
+    public List<User> getAllNotId(int id) {
+        return userDao.getAllNotId(id);
+    }
+
+    @Override
+    public List<Poetry> getAllCollectedPoetryByUserName(String userName) {
+        int userId = userDao.getByUserName(userName).getId();
+        List<Poetry> allCollectedPoetryByUserId = poetryDao.getAllCollectedPoetryByUserId(userId);
+        return allCollectedPoetryByUserId;
+    }
+
+    @Override
+    public Boolean deleteCollectedPoetry(int userId, int poetryId) {
+        int i = userDao.deleteCollectedPoetryBy2Id(userId,poetryId);
+        return i > 0;
     }
 }

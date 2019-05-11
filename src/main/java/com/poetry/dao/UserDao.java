@@ -1,6 +1,8 @@
 package com.poetry.dao;
 
+import com.poetry.entity.Poetry.PoetryCollection;
 import com.poetry.entity.User.User;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -22,10 +24,15 @@ public interface UserDao {
 
     int deleteByUserName(String userName);
 
+    int deleteCollectedPoetryBy2Id(@Param("userId")int userId,@Param("poetryId")int poetryId);
+
     User getByUserId(int id);
 
     User getByUserName(String userName);
 
+    List<User> getAllNotId(int id);
+
     List<User> getAllUser();
 
+    int insertCollectionWithPoetry(@Param("userId") int userId,@Param("poetryId") int poetryId);
 }

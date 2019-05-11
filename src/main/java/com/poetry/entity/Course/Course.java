@@ -44,4 +44,7 @@ public class Course extends BaseEntity {
 
     @ApiModelProperty(value = "是否免费")
     private int free;   //1为免费，0为付费
+
+    @ApiModelProperty(value = "视频地址")
+    private String videoUrl;
 }

@@ -29,6 +29,9 @@
     <delete id="deleteByUserName">
         delete from user where user_name=#{userName}
     </delete>
+    <delete id="deleteCollectedPoetryBy2Id">
+        delete from poetry_collection where user_id=#{userId} and poetry_id=#{poetryId}
+    </delete>
     <select id="getByUserId" resultType="User">
         select * from user where id=#{id}
     </select>
@@ -37,5 +40,11 @@
     </select>
     <select id="getAllUser" resultType="User">
         select * from user
+    </select>
+    <insert id="insertCollectionWithPoetry" >
+        insert ignore into poetry_collection (user_id,poetry_id,date_create,date_update) values (#{userId},#{poetryId},now(),now())
+    </insert>
+    <select id="getAllNotId" resultType="User">
+        select * from user where id != #{id}
     </select>
 </mapper>

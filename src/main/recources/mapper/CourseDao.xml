@@ -17,4 +17,16 @@
     <select id="selectCourseById" resultType="Course">
         select * from course where id=#{id}
     </select>
+    <insert id="insertCourseCollection">
+        insert ignore into course_collection (user_id,course_id,date_create,date_update) values (#{userId},#{courseId},now(),now())
+    </insert>
+    <select id="getAllCollectedCourseByUserId" resultType="Course">
+        select course.id,course.course_name,course.category_id,course.teacher,course.course_introduce,course.image_url,course.total_time,course.course_price,course.free,c.date_create,c.date_update,video_url  from course_collection as c inner join course on c.course_id=course.id where c.user_id=#{userId}
+    </select>
+    <delete id="deleteCollectedCourse">
+        delete from course_collection where user_id=#{userId} and course_id=#{courseId}
+    </delete>
+    <insert id="commitCourseStar">
+        insert ignore into course_comment (user_id,course_id,star_level,date_create,date_update) values (#{userId},#{courseId},#{starLevel},now(),now())
+    </insert>
 </mapper>
